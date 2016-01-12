@@ -16,6 +16,7 @@ ENV['SINATRA_ENV'] ||= "development"
 ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
   :database => "db/mechanics_lab#{ENV['SINATRA_ENV']}.sqlite"
+  :database => "db/artists.sqlite"
 )
 
 require_relative "../artist.rb"
